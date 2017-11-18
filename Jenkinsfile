@@ -3,6 +3,7 @@
 		
 		stage('Build'){
 			echo 'Building..'
+			bat 'make'
 		}
 
 		stage('Test'){
