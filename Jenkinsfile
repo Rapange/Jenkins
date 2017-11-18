@@ -1,5 +1,3 @@
-Jenkinsfile (Scripted Pipeline)
-pipeline{
 	node{
 		checkout scm
 		
@@ -21,4 +19,3 @@ pipeline{
 			}
 		}
 	}
-}
