@@ -3,7 +3,7 @@
 		
 		stage('Build'){
 			echo 'Building..'
-			bat 'python Hello.py'
+			bat 'D:\Python\python.exe Hello.py'
 		}
 
 		stage('Test'){
