@@ -1,22 +1,24 @@
-Jenkinsfile (Declarative Pipeline)
+Jenkinsfile (Scripted Pipeline)
 pipeline{
-	agent any
-	stage{
-		steps{
-			echo 'Building..'
+	node{
+		checkout scm
 		
-		}
-	}
+		stage{
+			steps{
+				echo 'Building..'
 
-	stage('Test'){
-		steps{
-			echo 'Testing..'
+			}
 		}
-	}
-	stage('Deploy'){
-		steps{
-			echo 'Deploying....'
-		}
-	}
 
+		stage('Test'){
+			steps{
+				echo 'Testing..'
+			}
+		}
+		stage('Deploy'){
+			steps{
+				echo 'Deploying....'
+			}
+		}
+	}
 }
