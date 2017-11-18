@@ -3,7 +3,7 @@
 		
 		stage('Build'){
 			echo 'Building..'
-			bat 'make'
+			bat 'python Hello.py'
 		}
 
 		stage('Test'){
