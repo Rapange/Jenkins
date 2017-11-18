@@ -1,7 +1,7 @@
 	node{
 		checkout scm
 		
-		stage{
+		stage('Build'){
 			steps{
 				echo 'Building..'
 
