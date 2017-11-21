@@ -3,11 +3,13 @@
 		
 		stage('Build'){
 			echo 'Building..'
-			bat 'D:/Python/python.exe Hello.py'
+			sh 'g++ Hello.cpp -o Hello -std=c++11'
 		}
 
 		stage('Test'){
 			echo 'Testing..'
+			sh './Hello 4 5'
+			
 		}
 		stage('Deploy'){
 			echo 'Deploying....'
