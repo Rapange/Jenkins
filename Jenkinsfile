@@ -3,7 +3,7 @@
 		
 		stage('Build'){
 			echo 'Building..'
-			sh 'g++ Hello.cpp -o Hello -std=c++11'
+			sh 'g++ my_division.cpp -o my_division -std=c++11'
 		}
 
 		stage('Test'){
