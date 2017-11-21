@@ -8,7 +8,8 @@
 
 		stage('Test'){
 			echo 'Testing..'
-			sh './Hello 4 5'
+			//sh './Hello 4 5'
+			sh 'bash Test.sh'
 			
 		}
 		stage('Deploy'){
