@@ -7,9 +7,15 @@ double myDivision(double a, double b){
   return a / b;
 }
 
-int main(int argc, char **argv){
+/*int main(int argc, char **argv){
   double a = stoi(argv[1]);
   double b = stoi(argv[2]);
   cout<<myDivision(a,b)<<endl;
   return 0;
+}*/
+
+int main(){
+  double a, b;
+  cin>>a>>b;
+  cout<<myDivision(a,b)<<endl;
 }
