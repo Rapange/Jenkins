@@ -14,6 +14,7 @@ declare -a file_base=("file1" "file2" "file3")
 
 # Loop the array
 for file in "${file_base[@]}"; do
+    echo Hello
     # Padd file_base with suffixes
     file_in="$file.in"             # The in file
     file_out_val="$file.out"       # The out file to check against
