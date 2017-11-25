@@ -4,7 +4,7 @@ using namespace std;
 
 double myDivision(double a, double b){
   if(b == 0) return 0;
-  return a / b;
+  return (a+1) / b;
 }
 
 /*int main(int argc, char **argv){
