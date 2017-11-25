@@ -3,13 +3,14 @@
 		
 		stage('Build'){
 			echo 'Building..'
-			sh 'g++ my_division.cpp -o my_division -std=c++11'
+			sh 'make'
 		}
 
 		stage('Test'){
 			echo 'Testing..'
-			//sh './Hello 4 5'
-			sh 'bash Test.sh my_division'
+			
+			sh 'bash Test.sh my_division > Results.txt'
+			sh 'cat Results.txt'
 			
 		}
 		stage('Deploy'){
