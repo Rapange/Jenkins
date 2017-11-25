@@ -14,11 +14,10 @@ declare -a file_base=("file1" "file2" "file3")
 
 # Loop the array
 for file in "${file_base[@]}"; do
-    echo Hello
     # Padd file_base with suffixes
-    file_in="$file.in"             # The in file
-    file_out_val="$file.out"       # The out file to check against
-    file_out_tst="$file.out.tst"   # The outfile from test application
+    file_in="inputs/$file.in"             # The in file
+    file_out_val="outputs/outputs/$file.out"       # The out file to check against
+    file_out_tst="outputs/program_outputs/$file.out.tst"   # The outfile from test application
 
     # Validate infile exists (do the same for out validate file)
     if [ ! -f "$file_in" ]; then
